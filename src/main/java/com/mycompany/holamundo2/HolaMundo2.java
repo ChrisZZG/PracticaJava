@@ -266,39 +266,78 @@ public class HolaMundo2 {
         
         System.out.println("--Examen 4 --- VECTORES Y MATRICES");
         
-        String ciudad[] = new String[5];
-        int minima[] = new int[5];
-        int maxima[] = new int[5];
-        
-        System.out.println("Carga Ciudades");
-        Scanner cargaCiudad = new Scanner(System.in);
-        for(int c = 0; c<ciudad.length; c++){
-            System.out.println("Cargar la ciudad para la posicion: " + c);
-            ciudad[c] = cargaCiudad.next();
+       //Carga de Ciudades y sus Temperaturas maximas y minimas por Vectores
+       
+//       String ciudades[] = new String[5];
+//       int minima[] = new int[5];
+//       int maxima[] = new int[5];
+//       
+//       //Entrada de Datos por Scanner
+//       Scanner entCiudad = new Scanner(System.in);
+//       Scanner entMinima = new Scanner(System.in);
+//       Scanner entMaxima = new Scanner(System.in);
+//       
+//       for(int i=0; i<ciudades.length; i++){
+//           System.out.println("Ingresar la Ciudad para la posicion: " + (i+1));
+//           ciudades[i]= entCiudad.next();
+//           
+//           System.out.println("Ingresar la Temperatura Minima para la Ciudad: " + (i+1));
+//           minima[i]= entMinima.nextInt();
+//           
+//           System.out.println("Ingresar la Temperatura Maxima para la Ciudad: " + (i+1));
+//           maxima[i] = entMaxima.nextInt();
+//       }
+//       
+//       //Mostrar los La Ciudad con la Menor Temperatura y la Ciudad con la Mayor Temperatura
+//       //Para la Minima
+//       int minProvisorio = 1000;
+//       int posicionMin = 0;
+//       for(int i=0; i<minima.length; i++){
+//           if(minProvisorio > minima[i]){
+//               minProvisorio = minima[i];
+//               posicionMin = i;
+//           }
+//       }
+//       
+//       //Para la Maxima
+//       int maxProvisoria = 0;
+//       int posicionMax = 0;
+//       for(int i=0; i<maxima.length; i++){
+//           if(maxProvisoria < maxima[i]){
+//               maxProvisoria = maxima[i];
+//               posicionMax = i;
+//           }
+//       }
+//       
+//       //Mostrar la Ciudad con la Minima y la Ciudad con la Maxima
+//        System.out.println("---------REGISTRO DE TEMPERATURAS------------");
+//        System.out.println("La ciudad con la Temperatura Minima fue: ");
+//        System.out.println("-- " + ciudades[posicionMin] + ", con: " + minProvisorio + " grados Centigrados");
+//        System.out.println("-------------------------------");
+//        System.out.println("La ciduad con la Temperatura Maxima fue: ");
+//        System.out.println("--" + ciudades[posicionMax] + ", con: " + maxProvisoria + " grados Centigrados");
+
+        System.out.println("--Examen 5 --- VECTORES Y MATRICES");
+        //Matriz 4*5 con numeros 5
+        int cinco[][]= new int[4][5];
+        for(int f=0; f<cinco.length; f++){
+            for(int c=0; c<cinco.length + 1; c++){
+                cinco[f][c] = 5;
+            }
         }
-        
-        System.out.println("Carga Temperaturas Minima");
-        Scanner cargaMinima = new Scanner(System.in);
-        for(int mi = 0; mi<minima.length; mi++){
-            System.out.println("Cargar la Temperatura minima para la posicion: " + mi);
-            minima[mi] = cargaMinima.nextInt();
-        }
-        
-        
-        System.out.println("Carga Temperaturas Maximas");
-        Scanner cargaMaxima = new Scanner(System.in);
-        for(int ma=0; ma<maxima.length; ma++){
-            maxima[ma] = cargaMaxima.nextInt();
-        }
-        
-        System.out.println("Mostrar la Ciudad con la Temperatura mas Baja y mas Alta");
-        int baja = 0;
-        for(int c=0; c<ciudad.length; c++){
-            for(int mi=0; mi<minima.length; mi++){
-                baja = minima[mi];
+        //Mostrar la matriz resultante
+        System.out.println("---MATRIZ RESULTANTE----");
+        for(int f=0; f<cinco.length; f++){
+            System.out.println("los valores de la Fila: " + f);
+            for(int c=0; c<cinco.length + 1; c++){
+                System.out.println("son los siguientes: " + cinco[f][c]);
             }
         }
         
+        
+
     }
+    
+            
    
 }
